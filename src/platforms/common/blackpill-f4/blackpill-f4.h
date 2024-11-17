@@ -58,6 +58,8 @@ extern bool debug_bmp;
 #endif /* ALTERNATIVE_PINOUT */
 #endif /* SHIELD */
 
+#define PLATFORM_HAS_POWER_SWITCH 1
+
 /*
  * Error handling for ALTERNATIVE_PINOUT
  * If ALTERNATIVE_PINOUT has a value >= 4 (undefined), or <= 0, an error is thrown.
@@ -170,7 +172,7 @@ extern bool debug_bmp;
 #define USER_BUTTON_KEY_PORT GPIOA
 #define USER_BUTTON_KEY_PIN  GPIO0
 
-#define LED_PORT       GPIOC
+#define LED_PORT       GPIOB
 #define LED_IDLE_RUN   GPIO13
 #define LED_ERROR      GPIO14
 #define LED_BOOTLOADER GPIO15
